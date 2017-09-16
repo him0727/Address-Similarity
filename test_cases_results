@@ -1,0 +1,191 @@
+******************** RESULT ********************
+Address 1:  香港島中西區摩星嶺1號
+Address 2:  香港島中西區摩星嶺1號
+Cosine similarity score:  1.0
+Common substring score:  1.0
+Total similarity:  1.0
+************************************************
+
+******************** RESULT ********************
+Address 1:  香港九龍元朗站3號客運大樓
+Address 2:  九龍元朗站三號客運大樓
+Cosine similarity score:  1.0
+Common substring score:  1.0
+Total similarity:  1.0
+************************************************
+
+******************** RESULT ********************
+Address 1:  九龍紅磡理工大學
+Address 2:  九龍紅磡灣育才道11號
+Cosine similarity score:  0.25819888974716115
+Common substring score:  0.25
+Total similarity:  0.2540994448735806
+************************************************
+
+******************** RESULT ********************
+Address 1:  新界沙田沙角街8號舖
+Address 2:  沙田大圍沙角街八號
+Cosine similarity score:  0.8944271909999159
+Common substring score:  0.75
+Total similarity:  0.8222135954999579
+************************************************
+
+******************** RESULT ********************
+Address 1:  香港新界老圍村一街1號3座地下
+Address 2:  新界老圍村1街第3座地下
+Cosine similarity score:  0.9128709291752769
+Common substring score:  0.9
+Total similarity:  0.9064354645876385
+************************************************
+
+******************** RESULT ********************
+Address 1:  旺角西洋菜南街一百九十號西洋大廈地下190-192B
+Address 2:  香港九龍西洋菜街190號第190至192B號
+Cosine similarity score:  0.8302909552086493
+Common substring score:  0.64
+Total similarity:  0.7351454776043247
+************************************************
+
+******************** RESULT ********************
+Address 1:  九龍尖沙咀寶勒巷五號30樓F室
+Address 2:  九龍尖沙咀寶勒巷5號30F
+Cosine similarity score:  0.9128709291752769
+Common substring score:  0.75
+Total similarity:  0.8314354645876385
+************************************************
+
+******************** RESULT ********************
+Address 1:  香港九龍深水埗深旺道1號巴士站
+Address 2:  九龍彩虹巴士總站
+Cosine similarity score:  0.3535533905932738
+Common substring score:  0.2
+Total similarity:  0.2767766952966369
+************************************************
+
+******************** RESULT ********************
+Address 1:  九龍尖沙咀寶勒巷10號10 PRAT 6樓
+Address 2:  九龍尖沙咀寶勒巷10號寶勒10 6樓
+Cosine similarity score:  0.8104432008587533
+Common substring score:  0.625
+Total similarity:  0.7177216004293767
+************************************************
+
+******************** RESULT ********************
+Address 1:  新界屯門海皇路海皇商場9樓902號舖
+Address 2:  新界屯門V City 09樓902號
+Cosine similarity score:  0.4183300132670378
+Common substring score:  0.35714285714285715
+Total similarity:  0.3877364352049475
+************************************************
+
+******************** RESULT ********************
+Address 1:  香港島小西灣富欣花園商場地下1號
+Address 2:  香港島銅鑼灣東角島一號地下
+Cosine similarity score:  0.4803844614152615
+Common substring score:  0.15384615384615385
+Total similarity:  0.31711530763070767
+************************************************
+
+******************** RESULT ********************
+Address 1:  新蒲崗錦榮街333號1號A - C
+Address 2:  九龍新蒲崗康強街223號地下1A-1B號舖
+Cosine similarity score:  0.5642880936468347
+Common substring score:  0.375
+Total similarity:  0.46964404682341737
+************************************************
+
+******************** RESULT ********************
+Address 1:  Mount Davis Bus Terminus, HK
+Address 2:  Mount Davis Bus Terminus, HK
+Cosine similarity score:  1.0
+Common substring score:  1.0
+Total similarity:  1.0
+************************************************
+
+******************** RESULT ********************
+Address 1:  No. 1, Mount Davis Bus Terminus, Hong Kong
+Address 2:  No. 1, Mount Davis Bus Terminus
+Cosine similarity score:  1.0
+Common substring score:  1.0
+Total similarity:  1.0
+************************************************
+
+******************** RESULT ********************
+Address 1:  11 Yuk Choi Rd, Hung Hom
+Address 2:  No. 11, PolyU, Yuk Choi Road, Hung Hom, Kowloon
+Cosine similarity score:  0.9511844635310913
+Common substring score:  0.8333333333333334
+Total similarity:  0.8686886723926608
+************************************************
+
+******************** RESULT ********************
+Address 1:  1A, 1/F Fu Cheong Shopping Mall, Sham Mong Road, Sham Shui Po, HK
+Address 2:  Shop 1A, Fu Cheong Shopping Mall, Fu Cheong Estate, Sham Shui Po, KLN
+Cosine similarity score:  0.9156770869201674
+Common substring score:  0.8214285714285714
+Total similarity:  0.8497031260760501
+************************************************
+
+******************** RESULT ********************
+Address 1:  ABERDEEN. G01-02, Port Centre, Aberdeen, Hong Kong
+Address 2:  G01 - G02, G/F, Aberdeen Port Center, HK island, HK
+Cosine similarity score:  0.9776709006307399
+Common substring score:  0.6666666666666666
+Total similarity:  0.7599679368558886
+************************************************
+
+******************** RESULT ********************
+Address 1:  1/F, Yee Hing Building, No. 19 Leighton Road, Causeway Bay
+Address 2:  Floor 1, YeeHing Building, 19 Leighton Road, Causeway Bay, Hong Kong
+Cosine similarity score:  0.8830427246695705
+Common substring score:  0.8
+Total similarity:  0.8249128174008711
+************************************************
+
+******************** RESULT ********************
+Address 1:  Shop 119, 2/F, Kwai Chung Plaza, 7-11 Kwai Foo Road
+Address 2:  No. 119, Floor 2, Kwai Chung Plaza, 7 - 11 Kwai Foo Rd., Kwai Chung, N.T.
+Cosine similarity score:  0.8632691966533073
+Common substring score:  0.6363636363636364
+Total similarity:  0.7044353044505376
+************************************************
+
+******************** RESULT ********************
+Address 1:  15/F., Sing Tao News Corporation Building, 3 Tung Wong Road, Shau Kei Wan, Hong Kong
+Address 2:  1/F., 8 Chun Ying Street, Tseung Kwan O Industrial Estate West, N.T., Hong Kong
+Cosine similarity score:  0.6250479536935968
+Common substring score:  0.24107142857142858
+Total similarity:  0.356264386108079
+************************************************
+
+******************** RESULT ********************
+Address 1:  Tin Shui Wai Station, Exit A, New Territories
+Address 2:  Exit A, Tin Shui stn., NT
+Cosine similarity score:  0.8911917713515211
+Common substring score:  0.6666666666666666
+Total similarity:  0.7340241980721229
+************************************************
+
+******************** RESULT ********************
+Address 1:  3/F, Tung Che Commercial Centre, 246 Des Voeux Road West, Sai Ying Pun
+Address 2:  7/F, To Kwa Wan Government Offices, 165 Ma Tau Wai Road, To Kwa Wan
+Cosine similarity score:  0.509171034063111
+Common substring score:  0.14285714285714285
+Total similarity:  0.2527513102189333
+************************************************
+
+******************** RESULT ********************
+Address 1:  LG2, High Court, 38 Queensway, Hong Kong.
+Address 2:  Shop 3E-08, Level 3 /F, Sunshine City Plaza, Ma On Shan, New Territories.
+Cosine similarity score:  0.44054083063105715
+Common substring score:  0.0
+Total similarity:  0.13216224918931713
+************************************************
+
+******************** RESULT ********************
+Address 1:  Canossa Hospital (Caritas), 1 Old Peak Road
+Address 2:  Caritas Medical Centre, 111 Wing Hong Street, Sham Shui Po
+Cosine similarity score:  0.662495170372298
+Common substring score:  0.19642857142857142
+Total similarity:  0.3362485511116894
+************************************************
