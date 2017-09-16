@@ -1,4 +1,4 @@
-# Address-Similarity-Hong-Kong-
+# Address-Similarity
 A python module for calculating the similarity of two given addresses either in Chinese or English.
 
 ## Features
