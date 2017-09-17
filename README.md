@@ -33,10 +33,10 @@ For English address, address is splitted by whitespacee and all numbers are extr
   - Iterate backwards from bottom right `strMaxtrix[i][j]` to `strMaxtrix[1][1]`, where `i` and `j` are the length of address1 - 1 and the length of address2 - 1, respectively. The current value will be added to score if and only if: 
     - For threshold == 1
     
-      `strMatrix[i][j] >= threshold and strMatrix[i - 1][j - 1] >= 1`
+      `strMatrix[i][j] >= threshold and strMatrix[i - 1][j - 1] >= 0`
     - For threshold > 1
     
-      `strMatrix[i][j] >= threshold and strMatrix[i - 1][j - 1] >= 0`
+      `strMatrix[i][j] >= threshold and strMatrix[i - 1][j - 1] >= 1`
     
     Then, `i` is substracted by the added value and `j` is set to the length of address2 - 1 again, to avoid counting the lenght of overlapping substrings
   - Final result is the ratio of final score and the maximum length of two given addresses, which is computed by `score / max(len(address1), len(address2))`
