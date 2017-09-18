@@ -6,12 +6,25 @@ A python module for calculating the similarity of two given addresses either in 
 - Address pre-processing to increase accuracy 
 - Customized weight and threshold of consine similarity and non-overlapping common substrings
 
-## Guideline
+## Usage
 Use `import AddressSimilarity` to import the module.
 
 Construct `AddressSimilarity.addressSimilarity(CHS_COS_WEIGHT, CHS_COM_WEIGHT, CHS_THRESHOLD, ENG_COS_WEIGHT, ENG_COM_WEIGHT, ENG_THRESHOLD )` object, parameters in order are costomized weight of consine similarity and non-overlapping common substrings, threshold of minimum length of common substrings in Chinese, the same followed by English. Default as `CHS_COS_WEIGHT = 0.5, CHS_COM_WEIGHT = 0.5, CHS_THRESHOLD = 2, ENG_COS_WEIGHT = 0.3, ENG_COM_WEIGHT = 0.7, ENG_THRESHOLD = 3`.
 
 `compareChsAddress(address1, address2)` and `compareEngAddress(address1, address2)` for Chinese and English address, respectively. Return is the percentage of similarity, with 1 as totally the same and 0 as totally different.
+
+```
+import AddressSimilarity
+compare = AddressSimilarity.addressSimilarity()
+print (compare.compareChsAddress(u'香港島中西區摩星嶺1號', u'香港島中西區摩星嶺1號'))
+# => 1.0
+print (compare.compareChsAddress(u'旺角西洋菜南街一百九十號西洋大廈地下190-192B', u'香港九龍西洋菜街190號第190至192B號'))
+# => 0.7351454776043247
+print (compare.compareEngAddress(u'11 Yuk Choi Rd, Hung Hom', u'No. 11, PolyU, Yuk Choi Road, Hung Hom, Kowloon'))
+# => 0.8686886723926608
+print (compare.compareEngAddress(u'LG2, High Court, 38 Queensway, Hong Kong.', u'Shop 3E-08, Level 3 /F, Sunshine City Plaza, Ma On Shan, New Territories.'))
+# => 0.13216224918931713
+```
 
 ## Algorithm
 This algorithm is based on two criteria: 1. Cosine similarity (COS) & 2. Non-overlapping common substrings (COM), final similarity is computed using this formula: *COS \* COS_WEIGHT + COM \* COM_WEIGHT*.
