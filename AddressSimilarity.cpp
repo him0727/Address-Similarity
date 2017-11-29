@@ -185,10 +185,10 @@ class AddressSimilarity {
     AddressSimilarity(float ccsw = 0.5, float ccmw = 0.5, int ct = 2, float ecsw = 0.3, float ecmw = 0.7, int et = 3) {
       chs_cos_weight = ccsw;
       chs_com_weight = ccmw;
-      chs_threshold = ct;
+      chs_threshold = ct ? ct : 1;
       eng_cos_weight = ecsw;
       eng_com_weight = ecmw;
-      eng_threshold = et;
+      eng_threshold = et ? et : 1;
     }
      
     float compare_chs_addr(string raw_addr1, string raw_addr2) {
