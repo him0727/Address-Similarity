@@ -1,3 +1,5 @@
+# Python version is no longer maintained and updated! Please consider using C++ version.
+
 # Address-Similarity
 A python module for calculating the similarity of two given addresses either in Chinese or English.
 
