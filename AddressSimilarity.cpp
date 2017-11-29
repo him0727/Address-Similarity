@@ -85,7 +85,7 @@ class AddressSimilarity {
     }
 
     wstring utf8_to_wstring(const string& str) {
-      wstring_convert<std::codecvt_utf8<wchar_t>> myconv;
+      wstring_convert<codecvt_utf8<wchar_t>> myconv;
       return myconv.from_bytes(str);
     }
     
