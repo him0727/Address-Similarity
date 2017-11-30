@@ -90,7 +90,7 @@ class AddressSimilarity {
     }
     
     string *pre_processing(string raw_addr1, string raw_addr2, const vector<string> &escape_chars = {}, const vector<pair<string, string>> &replace_chars = {}) {
-      string addr1 = raw_addr1, addr2 = raw_addr2;
+      string addr1 = strip(raw_addr1), addr2 = strip(raw_addr2);
       lower(addr1);
       lower(addr2);
       for (int i = 0; i < escape_chars.size(); i++) {
