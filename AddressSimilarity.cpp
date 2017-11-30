@@ -126,6 +126,7 @@ class AddressSimilarity {
     
     float cos_similarity(string addr1, string addr2) {
       if (addr1 == addr2) return 1.0;
+      if (!addr1.size() || !addr2.size()) return 0;
       set<wchar_t> addr1_set, addr2_set, addr_set;
       set<wchar_t>::iterator itr;
       wstring w_addr1 = utf8_to_wstring(addr1), w_addr2 = utf8_to_wstring(addr2);
@@ -153,8 +154,14 @@ class AddressSimilarity {
     
     float com_similarity(string addr1, string addr2, int threshold) {
       if (addr1 == addr2) return 1.0;
+      if (!addr1.size() || !addr2.size()) return 0;
       wstring w_addr1 = utf8_to_wstring(addr1), w_addr2 = utf8_to_wstring(addr2);
-      float val[w_addr1.size() + 1][w_addr2.size() + 1] = {0};
+      float val[w_addr1.size() + 1][w_addr2.size() + 1];
+      for (int i = 0; i <= w_addr1.size(); i++) {
+        for (int j = 0; j <= w_addr2.size(); j++) {
+          val[i][j] = 0;
+        }
+      }
       for (int i = 1; i <= w_addr1.size(); i++) {
         for (int j = 1; j <= w_addr2.size(); j++) {
           if (w_addr1[i - 1] == w_addr2[j - 1]) {
