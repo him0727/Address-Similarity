@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "AddressSimilarity.cpp"
+#include "AddressSimilarity.h"
 
 using namespace std;
 
