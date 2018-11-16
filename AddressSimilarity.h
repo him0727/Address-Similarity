@@ -3,6 +3,9 @@
 
 using namespace std;
 
+/*--------------------------------------------------------------------------------------------------
+ Header file listing all variables and methods of AddressSimilarity class
+--------------------------------------------------------------------------------------------------*/
 class AddressSimilarity {
   private:
     
@@ -11,16 +14,22 @@ class AddressSimilarity {
     int chs_threshold, eng_threshold;
     
   public:
+  
+    AddressSimilarity(float chs_cos_weight = 0.5, float chs_com_weight = 0.5, int chs_threshold = 2,
+                      float eng_cos_weight = 0.3, float eng_com_weight = 0.7, int eng_threshold = 3);
     
-    AddressSimilarity(float ccsw = 0.5, float ccmw = 0.5, int ct = 2, float ecsw = 0.3, float ecmw = 0.7, int et = 3);
+    ~AddressSimilarity();
+    
+    float compare_addr(string raw_addr1, string raw_addr2, bool enable_rand = true);
     
     float compare_chs_addr(string raw_addr1, string raw_addr2);
     
-    float compare_eng_addr(string raw_addr1, string raw_addr2);
+    float compare_eng_addr(string raw_addr1, string raw_addr2, bool enable_rand = true);
     
     void get_params();
     
-    void set_params(float ccsw = 0.5, float ccmw = 0.5, int ct = 2, float ecsw = 0.3, float ecmw = 0.7, int et = 3);
+    void set_params(float chs_cos_weight = 0.5, float chs_com_weight = 0.5, int chs_threshold = 2,
+                    float eng_cos_weight = 0.3, float eng_com_weight = 0.7, int eng_threshold = 3);
     
 };
 

@@ -1,7 +1,3 @@
-================ Address Similarity C++ Version reults ================
-======================== Compiled by GCC 7.2.0 ========================
-====================== him0727 @ 20171129 114930 ======================
-
 ******************************* RESULT *******************************
 Address 1: 香港島中西區摩星嶺1號
 Address 2: 香港島中西區摩星嶺1號
@@ -141,9 +137,9 @@ Total similarity: 0.837746
 ******************************* RESULT *******************************
 Address 1: 1/F, Yee Hing Building, No. 19 Leighton Road, Causeway Bay
 Address 2: Floor 1, YeeHing Building, 19 Leighton Road, Causeway Bay, Hong Kong
-Cosine similarity score: 0.883043
-Common substring score: 0.8
-Total similarity: 0.824913
+Cosine similarity score: 0.851359
+Common substring score: 0.727273
+Total similarity: 0.764499
 **********************************************************************
 
 ******************************* RESULT *******************************
@@ -193,3 +189,4 @@ Cosine similarity score: 0.520231
 Common substring score: 0.164286
 Total similarity: 0.271069
 **********************************************************************
+

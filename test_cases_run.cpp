@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 #include "AddressSimilarity.h"
 
 using namespace std;
@@ -28,30 +28,43 @@ vector<vector<string>> eng_addrs = {{"Mount Davis Bus Terminus, HK", "Mount Davi
                                     {"Canossa Hospital (Caritas}, 1 Old Peak Road", "Caritas Medical Centre, 111 Wing Hong Street, Sham Shui Po"},
                                     {"3/F, Tung Che Commercial Centre, 246 Des Voeux Road West, Sai Ying Pun", "7/F, To Kwa Wan Government Offices, 165 Ma Tau Wai Road, To Kwa Wan"}};
 
-void print_result(AddressSimilarity &comparer, const vector<vector<string>> &addrs, string lang = "CHS") {
+/*--------------------------------------------------------------------------------------------------
+ Sample function to show compared results of list of addresses
+ @return: None
+ @params: AddressSimilarity comparer -> Instantiated AddressSimilarity object
+          vector<vector<string>> addrs -> List of addresses
+          (Optional) string lang -> default empty string, indicating language of given addresses
+--------------------------------------------------------------------------------------------------*/
+void print_result(AddressSimilarity &comparer, const vector<vector<string>> &addrs, string lang = "") {
   for (int i = 0; i < addrs.size(); i++) {
     cout << "******************************* RESULT *******************************" << endl;
     cout << "Address 1: " << addrs[i][0] << endl;
     cout << "Address 2: " << addrs[i][1] << endl;
+    // Disable randomized computation for English address because displaying three similarity results separately leads to inconsistency
     comparer.set_params(1, 0, 0, 1, 0, 0);
     cout << "Cosine similarity score: ";
     if (lang == "CHS") cout << comparer.compare_chs_addr(addrs[i][0], addrs[i][1]) << endl;
-    if (lang == "ENG") cout << comparer.compare_eng_addr(addrs[i][0], addrs[i][1]) << endl;
+    if (lang == "ENG") cout << comparer.compare_eng_addr(addrs[i][0], addrs[i][1], false) << endl;
+    if (lang == "") cout << comparer.compare_addr(addrs[i][0], addrs[i][1], false) << endl;
     comparer.set_params(0, 1, 2, 0, 1, 3);
     cout << "Common substring score: ";
     if (lang == "CHS") cout << comparer.compare_chs_addr(addrs[i][0], addrs[i][1]) << endl;
-    if (lang == "ENG") cout << comparer.compare_eng_addr(addrs[i][0], addrs[i][1]) << endl;
+    if (lang == "ENG") cout << comparer.compare_eng_addr(addrs[i][0], addrs[i][1], false) << endl;
+    if (lang == "") cout << comparer.compare_addr(addrs[i][0], addrs[i][1], false) << endl;
     comparer.set_params();
     cout << "Total similarity: ";
     if (lang == "CHS") cout << comparer.compare_chs_addr(addrs[i][0], addrs[i][1]) << endl;
-    if (lang == "ENG") cout << comparer.compare_eng_addr(addrs[i][0], addrs[i][1]) << endl;
+    if (lang == "ENG") cout << comparer.compare_eng_addr(addrs[i][0], addrs[i][1], false) << endl;
+    if (lang == "") cout << comparer.compare_addr(addrs[i][0], addrs[i][1], false) << endl;
     cout << "**********************************************************************\n" << endl;
   }
 }
 
 int main() {
+  // instantiate AddressSimilarity
   AddressSimilarity comparer;
-  print_result(comparer, chs_addrs, "CHS");
-  print_result(comparer, eng_addrs, "ENG");
+  // use auto detect address language
+  print_result(comparer, chs_addrs);
+  print_result(comparer, eng_addrs);
   return 0;
 }
