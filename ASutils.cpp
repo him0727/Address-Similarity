@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 #include "ASutils.h"
 
-using namespace std;
-
 const string CHS_NUM[11] = {"零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"};
 
 /*--------------------------------------------------------------------------------------------------
@@ -78,7 +76,7 @@ string arabic_to_chs_simple(int num) {
  @params: int num -> Arabic number
           (Optional) bool init -> default true, first time to call this function
 --------------------------------------------------------------------------------------------------*/
-string arabic_to_chs_full(int num, bool init) {
+string arabic_to_chs_full(int num, bool init = true) {
   string res = "";
   vector<pair<string, int>> unit = {{"億", 1e8}, {"萬", 1e4}, {"千", 1e3}, {"百", 1e2}, {"十", 10}}; 
   if (init) {

@@ -20,10 +20,6 @@ void lower(string &addr);
 
 wstring utf8_to_wstring(string &addr);
 
-string arabic_to_chs_simple(int num);
-
-string arabic_to_chs_full(int num, bool init = true);
-
 string to_chs_num(string addr1, string addr2);
 
 #endif

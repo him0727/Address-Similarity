@@ -2,8 +2,6 @@
 #include "ASutils.h"
 #include "AddressSimilarity.h"
 
-using namespace std;
-
 // Private
 
 /*--------------------------------------------------------------------------------------------------
@@ -183,7 +181,7 @@ AddressSimilarity :: ~AddressSimilarity() {
 --------------------------------------------------------------------------------------------------*/
 float AddressSimilarity :: compare_addr(string raw_addr1, string raw_addr2, bool enable_rand) {
   if (raw_addr1 == raw_addr2) {
-    return 1;
+    return 1.0;
   }
   if (raw_addr1.size() == 0 || raw_addr2.size() == 0) {
     return 0;
@@ -200,14 +198,14 @@ float AddressSimilarity :: compare_addr(string raw_addr1, string raw_addr2, bool
   for (auto c : tmp_addr1) {
     if (c - '0' >= 0 && c - '0' <= 9) {
       d_addr1_count++;
-    } else if ((c - 'a' >= 0 && c - 'a' <= 26) || (c - 'A' >= 0 && c - 'A' <= 26)) {
+    } else if ((c - 'a' >= 0 && c - 'a' < 26) || (c - 'A' >= 0 && c - 'A' < 26)) {
       a_addr1_count++;
     }
   }
   for (auto c : tmp_addr2) {
     if (c - '0' >= 0 && c - '0' <= 9) {
       d_addr2_count++;
-    } else if ((c - 'a' >= 0 && c - 'a' <= 26) || (c - 'A' >= 0 && c - 'A' <= 26)) {
+    } else if ((c - 'a' >= 0 && c - 'a' < 26) || (c - 'A' >= 0 && c - 'A' < 26)) {
       a_addr2_count++;
     }
   }
